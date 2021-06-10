@@ -1,23 +1,30 @@
 import React from 'react';
 import EngBook from './EngBook';
 
-function DispBook({data}) {
+function DispBook({data, delBook, updateBook}) {
     console.log('disbook')
     console.log(data)
     const engList = data.filter(langData=>langData.language==="English");
-    const oneBook = engList.map((elem)=>{
+    const olangList = data.filter(langData=>langData.language!=="English");
+    const oneEnBook = engList.map((elem)=>{
         return(
-        
-        <EngBook key={elem.id} eachBook={elem}/>)
-       
+        <EngBook key={elem.id} eachBook={elem} delBook={delBook}  updateBook={updateBook} />)
     })
-    console.log(oneBook)
+    const oneOLangBook = olangList.map((elem)=>{
+        return(
+        <EngBook key={elem.id} eachBook={elem} delBook={delBook}  updateBook={ updateBook}/>)
+    })
+
+    console.log(oneEnBook)
     return (
         <div>
-            <h1>Author</h1>
-            <h1>Language</h1>
+            <h1>English Books</h1>
             <ul >
-                {oneBook}
+                {oneEnBook}
+            </ul>
+            <h1>Other Languages Books</h1>
+            <ul>
+                {oneOLangBook}
             </ul>
         </div>
     )

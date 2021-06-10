@@ -47,13 +47,48 @@ function addBook(newBook){
     })
 }
 
+function delBook(bookId){
+  const config = {
+      method: "DELETE"
+  };
+  fetch(`http://localhost:3000/books/${bookId}`, config)
+  .then(response => response.json())
+  .then(()=>{
+      const updList = data.filter(filData=>filData.id!==bookId);
+      setData(updList);
+  })
+}
+
+
   console.log('entre a App')
   console.log(data);
+
+  function  updateBook(updFavorite, upId){
+    console.log('UPDATE '+ updFavorite + ' ' + upId)
+  
+    fetch(`http://localhost:3000/books/${upId}`,  {
+          method: "PATCH",
+          headers: {
+            "Content-type":  "application/json",
+          },
+          body: JSON.stringify(updFavorite),
+    })
+      .then(response => response.json())
+      .then((updFavorite) =>{
+          const updLikes = data.map((dat)=>{
+                if(dat.id === upId) return updFavorite;
+                return dat;
+          })
+        
+          setData(updLikes);
+      })
+  }
+
   return (
     <div className="App">
       
       <AddBook addBook={addBook}/>
-      <DispBook data={data}/>
+      <DispBook data={data} delBook={delBook} updateBook={updateBook}/>
     
   </div>
   );
