@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './EngBook.css';
 
 
  function EngBook({eachBook, delBook, updateBook}) {
@@ -24,22 +25,20 @@ console.log(favorite)
         updateBook(updReg,id);
     }
     return (
-             <li >
-            <div >
-                <strong>{title}</strong>
-                <img src={imageLink} alt={"CoverPage"} />
-            </div>
-      <div >
-        {favorite ? (
-          <button onClick={handleClickFav}>★</button>
-        ) : (
-          <button onClick={handleClickFav}>☆</button>
-        )}
+
+        <div className="col-3">
+            <img src={imageLink} alt={"CoverPage"} className="rounded float-center styimg"/>
+            <p ><strong>{title}</strong>  -  {author}</p>
        
-        <span> {author}</span>
-        <button onClick={handleClickDelBook}>🗑</button>
-      </div>
-    </li>
+          {favorite ? (
+            <button onClick={handleClickFav}>★</button>
+          ) : (
+            <button onClick={handleClickFav}>☆</button>
+          )}
+          <button onClick={handleClickDelBook}>🗑</button>
+        </div>
+    
+ 
              
      
            

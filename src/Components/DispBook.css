@@ -1,0 +1,17 @@
+.width60{
+    width:350px;
+  
+}
+
+.w2{
+      background-color: lawngreen;
+}
+
+.martop{
+    margin:20 0 0 0;
+}
+
+.posimg{
+    display:flex;
+    justify-content: center;
+}

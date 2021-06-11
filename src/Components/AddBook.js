@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import './AddBook.css';
 
 function AddBook({addBook}) {
     const [formData, setFormData] = useState({
@@ -37,31 +38,26 @@ function AddBook({addBook}) {
 
     return(
        <section>
-      <h1>New Book</h1>
-      <form onSubmit={handleSubmitNewBook}>
-        <label>
-          Title:
-          <input    
-             type="text"
-             name="title"
-
-             onChange={handleChange}
-          />
-        </label>
-        <label>
-          Author:
-          <input  
-             type="text"
-             name="author"
-             
-             onChange={handleChange}   
-          />
-        </label>
-       
-      
-      
-        <button type="submit">Add New Book</button>
-      </form>
+        <h1>New Book</h1>
+        <form onSubmit={handleSubmitNewBook}>
+          <label>
+            Title:
+            <input    
+              type="text"
+              name="title"
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            Author:
+            <input  
+              type="text"
+              name="author"
+              onChange={handleChange}   
+            />
+          </label>
+          <button type="submit">Add New Book</button>
+        </form>
     </section>
     )
 }

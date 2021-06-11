@@ -1,0 +1,14 @@
+.styimg{
+    background-color: rgb(252, 127, 10);
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    
+
+}
+
+.fldisp{
+    display:flex;
+    justify-content: space-between;
+}
+

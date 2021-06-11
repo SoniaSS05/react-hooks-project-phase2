@@ -1,5 +1,7 @@
 import React from 'react';
+import './DispBook.css';
 import EngBook from './EngBook';
+
 
 function DispBook({data, delBook, updateBook}) {
     console.log('disbook')
@@ -18,14 +20,28 @@ function DispBook({data, delBook, updateBook}) {
     console.log(oneEnBook)
     return (
         <div>
-            <h1>English Books</h1>
-            <ul >
+            <div className="row my-12 ">
+                <div className="col ms-300  top-10 start-120 left-80">
+                    <form  >
+                        <input
+                            type="text"
+                            name="description"
+                            id="search"
+                            placeholder="Book Title"
+                            className = "width60"
+                        /> 
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+            <h3>English Books</h3>
+            <div className="col posimg" >        
                 {oneEnBook}
-            </ul>
-            <h1>Other Languages Books</h1>
-            <ul>
-                {oneOLangBook}
-            </ul>
+            </div>
+            <h3>Other Languages Books</h3>
+                <div className="col posimg" >    
+                    {oneOLangBook}    
+                </div>
         </div>
     )
 }
