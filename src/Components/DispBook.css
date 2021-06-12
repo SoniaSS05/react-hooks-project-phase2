@@ -1,17 +1,36 @@
-.width60{
-    width:350px;
-  
-}
 
-.w2{
-      background-color: lawngreen;
-}
-
-.martop{
-    margin:20 0 0 0;
+.textcenter{
+    text-align: center;
 }
 
 .posimg{
-    display:flex;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 20px 10px 50px;
+}
+
+.forminp{
+    margin: 8px 5px 10px 80px;
+    background-color: white;
+    opacity: 0.8;
+    border: 1px solid #ff5100;
+    -webkit-appearance: none;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 60px;
+    color: #160e0a;
+    font-weight: 100;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.topmar{
+    margin-top: 10px;
+}
+
+.sizeglass{
+    width: 30px;
+    height: 80px;
 }

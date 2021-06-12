@@ -10,7 +10,7 @@
       "pages": 209,
       "title": "Things Fall Apart",
       "year": 1958,
-      "like": false
+      "like": true
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "pages": 784,
       "title": "Fairy tales",
       "year": 1836,
-      "like": ""
+      "like": false
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "pages": 928,
       "title": "The Divine Comedy",
       "year": 1315,
-      "like": ""
+      "like": false
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "pages": 160,
       "title": "The Epic Of Gilgamesh",
       "year": -1700,
-      "like": ""
+      "like": false
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "pages": 176,
       "title": "The Book Of Job",
       "year": -600,
-      "like": ""
+      "like": false
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "pages": 288,
       "title": "One Thousand and One Nights",
       "year": 1200,
-      "like": ""
+      "like": false
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "pages": 384,
       "title": "Njál's Saga",
       "year": 1350,
-      "like": ""
+      "like": false
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "pages": 226,
       "title": "Pride and Prejudice",
       "year": 1813,
-      "like": ""
+      "like": false
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "pages": 443,
       "title": "Le Père Goriot",
       "year": 1835,
-      "like": ""
+      "like": false
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "pages": 256,
       "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
       "year": 1952,
-      "like": ""
+      "like": false
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "pages": 1024,
       "title": "The Decameron",
       "year": 1351,
-      "like": ""
+      "like": false
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
       "pages": 224,
       "title": "Ficciones",
       "year": 1965,
-      "like": ""
+      "like": false
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "pages": 342,
       "title": "Wuthering Heights",
       "year": 1847,
-      "like": ""
+      "like": true
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
       "pages": 185,
       "title": "The Stranger",
       "year": 1942,
-      "like": ""
+      "like": false
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
       "pages": 320,
       "title": "Poems",
       "year": 1952,
-      "like": ""
+      "like": false
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
       "pages": 505,
       "title": "Journey to the End of the Night",
       "year": 1932,
-      "like": ""
+      "like": false
     },
     {
       "id": 17,
@@ -202,7 +202,7 @@
       "pages": 1056,
       "title": "Don Quijote De La Mancha",
       "year": 1610,
-      "like": ""
+      "like": false
     },
     {
       "id": 18,
@@ -214,7 +214,7 @@
       "pages": 544,
       "title": "The Canterbury Tales",
       "year": 1450,
-      "like": ""
+      "like": false
     },
     {
       "id": 19,
@@ -226,7 +226,7 @@
       "pages": 194,
       "title": "Stories",
       "year": 1886,
-      "like": ""
+      "like": false
     },
     {
       "id": 20,
@@ -238,7 +238,7 @@
       "pages": 320,
       "title": "Nostromo",
       "year": 1904,
-      "like": ""
+      "like": false
     },
     {
       "id": 21,
@@ -250,7 +250,7 @@
       "pages": 194,
       "title": "Great Expectations",
       "year": 1861,
-      "like": ""
+      "like": false
     },
     {
       "id": 22,
@@ -262,7 +262,7 @@
       "pages": 596,
       "title": "Jacques the Fatalist",
       "year": 1796,
-      "like": ""
+      "like": false
     },
     {
       "id": 23,
@@ -274,7 +274,7 @@
       "pages": 600,
       "title": "Berlin Alexanderplatz",
       "year": 1929,
-      "like": ""
+      "like": false
     },
     {
       "id": 24,
@@ -286,7 +286,7 @@
       "pages": 551,
       "title": "Crime and Punishment",
       "year": 1866,
-      "like": ""
+      "like": false
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@
       "pages": 656,
       "title": "The Idiot",
       "year": 1869,
-      "like": ""
+      "like": false
     },
     {
       "id": 26,
@@ -310,7 +310,7 @@
       "pages": 768,
       "title": "The Possessed",
       "year": 1872,
-      "like": ""
+      "like": false
     },
     {
       "id": 27,
@@ -322,7 +322,7 @@
       "pages": 824,
       "title": "The Brothers Karamazov",
       "year": 1880,
-      "like": ""
+      "like": false
     },
     {
       "id": 28,
@@ -334,7 +334,7 @@
       "pages": 800,
       "title": "Middlemarch",
       "year": 1871,
-      "like": ""
+      "like": false
     },
     {
       "id": 29,
@@ -346,7 +346,7 @@
       "pages": 581,
       "title": "Invisible Man",
       "year": 1952,
-      "like": ""
+      "like": false
     },
     {
       "id": 30,
@@ -358,7 +358,7 @@
       "pages": 104,
       "title": "Medea",
       "year": -431,
-      "like": ""
+      "like": false
     },
     {
       "id": 31,
@@ -370,7 +370,7 @@
       "pages": 313,
       "title": "Absalom, Absalom!",
       "year": 1936,
-      "like": ""
+      "like": false
     },
     {
       "id": 32,
@@ -382,7 +382,7 @@
       "pages": 326,
       "title": "The Sound and the Fury",
       "year": 1929,
-      "like": ""
+      "like": false
     },
     {
       "id": 33,
@@ -394,7 +394,7 @@
       "pages": 528,
       "title": "Madame Bovary",
       "year": 1857,
-      "like": ""
+      "like": false
     },
     {
       "id": 34,
@@ -406,7 +406,7 @@
       "pages": 606,
       "title": "Sentimental Education",
       "year": 1869,
-      "like": ""
+      "like": false
     },
     {
       "id": 35,
@@ -418,7 +418,7 @@
       "pages": 218,
       "title": "Gypsy Ballads",
       "year": 1928,
-      "like": ""
+      "like": false
     },
     {
       "id": 36,
@@ -430,7 +430,7 @@
       "pages": 417,
       "title": "One Hundred Years of Solitude",
       "year": 1967,
-      "like": ""
+      "like": false
     },
     {
       "id": 37,
@@ -442,7 +442,7 @@
       "pages": 368,
       "title": "Love in the Time of Cholera",
       "year": 1985,
-      "like": ""
+      "like": false
     },
     {
       "id": 38,
@@ -454,7 +454,7 @@
       "pages": 158,
       "title": "Faust",
       "year": 1832,
-      "like": ""
+      "like": false
     },
     {
       "id": 39,
@@ -466,7 +466,7 @@
       "pages": 432,
       "title": "Dead Souls",
       "year": 1842,
-      "like": ""
+      "like": false
     },
     {
       "id": 40,
@@ -478,7 +478,7 @@
       "pages": 600,
       "title": "The Tin Drum",
       "year": 1959,
-      "like": ""
+      "like": false
     },
     {
       "id": 41,
@@ -490,7 +490,7 @@
       "pages": 494,
       "title": "The Devil to Pay in the Backlands",
       "year": 1956,
-      "like": ""
+      "like": false
     },
     {
       "id": 42,
@@ -502,7 +502,7 @@
       "pages": 176,
       "title": "Hunger",
       "year": 1890,
-      "like": ""
+      "like": false
     },
     {
       "id": 43,
@@ -514,7 +514,7 @@
       "pages": 128,
       "title": "The Old Man and the Sea",
       "year": 1952,
-      "like": ""
+      "like": false
     },
     {
       "id": 44,
@@ -526,7 +526,7 @@
       "pages": 608,
       "title": "Iliad",
       "year": -735,
-      "like": ""
+      "like": false
     },
     {
       "id": 45,
@@ -538,7 +538,7 @@
       "pages": 374,
       "title": "Odyssey",
       "year": -800,
-      "like": ""
+      "like": false
     },
     {
       "id": 46,
@@ -550,7 +550,7 @@
       "pages": 68,
       "title": "A Doll's House",
       "year": 1879,
-      "like": ""
+      "like": false
     },
     {
       "id": 47,
@@ -562,7 +562,7 @@
       "pages": 228,
       "title": "Ulysses",
       "year": 1922,
-      "like": ""
+      "like": false
     },
     {
       "id": 48,
@@ -574,7 +574,7 @@
       "pages": 488,
       "title": "Stories",
       "year": 1924,
-      "like": ""
+      "like": false
     },
     {
       "id": 49,
@@ -586,7 +586,7 @@
       "pages": 160,
       "title": "The Trial",
       "year": 1925,
-      "like": ""
+      "like": false
     },
     {
       "id": 50,
@@ -598,7 +598,7 @@
       "pages": 352,
       "title": "The Castle",
       "year": 1926,
-      "like": ""
+      "like": false
     },
     {
       "title": "Mas exitos",
@@ -610,6 +610,78 @@
       "pages": 0,
       "year": 0,
       "id": 51
+    },
+    {
+      "title": "con todos los campos",
+      "author": "ss",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 52
+    },
+    {
+      "title": "con todos los campos",
+      "author": "ss",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 53
+    },
+    {
+      "title": "con todos los campos",
+      "author": "ss",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 54
+    },
+    {
+      "title": "con todos los campos",
+      "author": "ss",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 55
+    },
+    {
+      "title": "",
+      "author": "",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 56
+    },
+    {
+      "title": "",
+      "author": "",
+      "country": "",
+      "imageLink": "",
+      "language": "",
+      "link": "",
+      "pages": 0,
+      "year": 0,
+      "like": false,
+      "id": 57
     }
   ]
 }
