@@ -5,7 +5,10 @@ import App from './Components/App';
 
 
 ReactDOM.render(
-    <App />,
+    <Router>
+      <App />
+    </Router>
+   ,
     document.getElementById('root')
 );
 

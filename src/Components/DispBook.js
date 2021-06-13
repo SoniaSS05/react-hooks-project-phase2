@@ -7,10 +7,6 @@ import Home from './Home';
 
 function DispBook({data, delBook, updateBook, lookTit, searchFilt}) {
 
-    console.log('en DISPBOOK');
-    console.log(searchFilt.length);
-    console.log(searchFilt);
-
     if( searchFilt.length !== 0 ){
          data = searchFilt;
     }

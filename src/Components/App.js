@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, useHistory, Redirect} from 'react-router-dom';
 import './App.css';
 import AddBook from './AddBook';
 import DispBook from './DispBook';
 import Home from './Home';
+import NavBar from './NavBar';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
 //Filtrado de data. Busqueda de Titulo
   const [searchFilt, setSearchFilt] = useState([]);
 
-
+  
   useEffect(() => {
     console.log('At useeffect')
     fetch("http://localhost:3000/books")
@@ -36,6 +37,7 @@ function App() {
 
 
   function addBook(newBook){
+    
     const config = {
       method: "POST",
       headers: {
@@ -50,7 +52,13 @@ function App() {
         const newBooks =[...data, newBook];
         setData(newBooks);
       })
-      alert('hola');
+   
+      alert('Your Book was added to the Library');
+    
+
+
+
+
   }
 
   function delBook(bookId){
@@ -65,9 +73,6 @@ function App() {
     })
   }
 
-
-  console.log('entre a App')
-  console.log(data);
 
   function  updateBook(updFavorite, upId){
     console.log('UPDATE '+ updFavorite + ' ' + upId)
@@ -94,36 +99,36 @@ function App() {
   function lookTit(descTit){
     const search = data.filter(filData=>filData.title===descTit);
     if( search.length !== 0 ){
-      console.log('ENTRE A UNOOOOOOOOO')
       setSearchFilt([{}]);
     }
-    console.log('SEARCH')
-    console.log(search);
     setSearchFilt(search);
+   
+
+
+
+
   }
 
-
-
-    console.log('data estoy aca heyeyeyeyeyeyey')
-    console.log(data)
+ // const history=useHistory();
 
   return (
      <>
-     
+  
       <Router>
      
        <Switch> 
-          <Route exact path="/" > 
-            <Home />
-          </Route>
+          
           <Route path="/AddBook" > 
             <AddBook addBook={addBook}/>
           </Route>
           <Route path="/DispBook" >
             <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt}/>
           </Route> 
+          <Route exact path="/" > 
+            <Home />
+          </Route>
        
-          </Switch> 
+        </Switch> 
       </Router>
     </>
   );

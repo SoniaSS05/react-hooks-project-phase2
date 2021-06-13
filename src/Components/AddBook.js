@@ -1,8 +1,12 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import './AddBook.css';
 import Home from "./Home";
 
+
+
+
 function AddBook({addBook}) {
+    console.log("entre de nuevo a addboook")
     const [formData, setFormData] = useState({
         author: "",
         country: "",
@@ -16,6 +20,11 @@ function AddBook({addBook}) {
    
       });
     
+
+console.log('FORMDATA')
+console.log(formData.title);
+console.log(formData)
+
     function handleChange(event) {
         setFormData({
           ...formData,
@@ -39,15 +48,13 @@ function AddBook({addBook}) {
         addBook(newAddBook);
     }
 
+    
     return(
-     
       <div className="widinput">
          <Home />
         <h1>New Book:</h1>
         <section>
-         
           <form onSubmit={handleSubmitNewBook}>
-         
             <div  className="secclas">
               <label >
                 Title: 
@@ -115,7 +122,7 @@ function AddBook({addBook}) {
           </form>
       </section>
     </div>
-    )
+  )
 }
 
 export default AddBook;
