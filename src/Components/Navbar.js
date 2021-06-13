@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import {Link, NavLink} from 'react-router-dom'
 import {Dropdown} from './Dropdown';
 import './Navbar.css';
-import Logo from '../images/Logo.jpg';
+
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import {IconContext} from 'react-icons';
-import Ingredients from './Ingredients';
+
 
 
 function Navbar(){

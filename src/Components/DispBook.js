@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './DispBook.css';
 import EngBook from './EngBook';
+import Home from './Home';
 
 
 
@@ -50,6 +51,7 @@ function DispBook({data, delBook, updateBook, lookTit, searchFilt}) {
 
     return (
         <div className="textcenter">
+            <Home />
             <div className="textcenter">
                 <div className="topmar">
                     <form onSubmit={handleSubmittit} className="dispform">

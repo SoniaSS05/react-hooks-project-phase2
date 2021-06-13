@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import './AddBook.css';
+import Home from "./Home";
 
 function AddBook({addBook}) {
     const [formData, setFormData] = useState({
@@ -39,7 +40,9 @@ function AddBook({addBook}) {
     }
 
     return(
+     
       <div className="widinput">
+         <Home />
         <h1>New Book:</h1>
         <section>
          
