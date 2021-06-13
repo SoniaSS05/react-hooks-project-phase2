@@ -1,33 +1,78 @@
-.textcenter{
-    text-align: center;
+.widinput{
+    display: block;
+    text-align: left;
+ 
 }
 
-.posimg{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 10px 20px 10px 50px;
+.secclas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    margin: 10px 0px 10px 300px;
 }
 
-.forminp{
-    margin: 8px 5px 10px 80px;
+.dispbl{
+    display:block;
+}
+
+.dispinl{
+    display: inline-block;
+}
+
+.labinp{
+    margin: 10px 0px 0px 300px;
+    width: 100%;
+    background-color: blue;
+}
+
+.forminpadd{
+    margin-left: 20px;
+    margin-bottom:10px;
     background-color: white;
     opacity: 0.8;
     border: 1px solid #ff5100;
     -webkit-appearance: none;
     font-size: 15px;
     font-weight: bolder;
-    width: 50%;
     padding: 10px 15px;
-    border-radius: 60px;
     color: #160e0a;
     font-weight: 100;
     transition: all 0.3s;
     outline: none;
+    width: 400px;
+  
 }
 
-
-
-.sizeglass{
-    width: 30px;
-    height: 80px;
+label{
+    display: inline-block;
+    width: 80px;
 }
+
+.btn-3d {
+    margin-left: 800px;
+    padding: .4rem 1rem;
+    border: 1px solid #995309;
+    border-radius: 4px;
+    background-color: #d9750b;
+    color: #fff;
+  
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#ff5100),to(#ff5100));
+    background-image: linear-gradient(#ff5100 10%,#e76a00 100%);
+  }
+  
+  .btn-3d:hover, .btn-3d:focus {
+    background-color: #e0811b;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#ff5100 10%,#f70 100%);
+  }
+  
+  .btn-3d:active {
+    background-color: #cf6a00;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+    background-image: linear-gradient(#ff5100 10%,#f70 100%);
+  }

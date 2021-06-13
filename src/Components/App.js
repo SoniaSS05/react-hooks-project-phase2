@@ -51,6 +51,7 @@ function App() {
         const newBooks =[...data, newBook];
         setData(newBooks);
       })
+      alert('hola');
   }
 
   function delBook(bookId){
@@ -118,8 +119,8 @@ function App() {
         </div>
       </div>
     <div>
-  {/*  <AddBook addBook={addBook}/>*/}
-        <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt}/>
+    <AddBook addBook={addBook}/>
+        {/*  <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt}/>*/}
       </div>
   </div>
   );

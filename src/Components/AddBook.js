@@ -27,9 +27,9 @@ function AddBook({addBook}) {
         const newAddBook={
             title:formData.title,
             author:formData.author,
-            country: "",
-            imageLink: "",
-            language: "",
+            country: formData.country,
+            imageLink: formData.imageLink,
+            language: formData.language,
             link: "",
             pages: parseInt(0),
             year: parseInt(0),
@@ -40,70 +40,75 @@ function AddBook({addBook}) {
 
     return(
       <div className="widinput">
+        <h1>New Book:</h1>
         <section>
-          <h1>New Book:</h1>
+         
           <form onSubmit={handleSubmitNewBook}>
-            <label className="labinp" >
-              Title:
-              <input    
-                type="text"
-                name="title"
-                onChange={handleChange}
-                className="widinp"
-                placeholder="Title"
-              />
-            </label>
-            <label className="labinp">
-              Author:
-              <input  
-                type="text"
-                name="author"
-                onChange={handleChange}   
-                className="widinp"
-                placeholder="Author"
-              />
-            </label>
-            <label className="labinp">
-              Country:
-              <input  
-                type="text"
-                name="country"
-                onChange={handleChange}  
-                className="widinp" 
-                placeholder="Country"
-              />
-            </label>
-            <label className="labinp">
-              Image:
-              <input  
-                type="text"
-                name="imageLink"
-                onChange={handleChange}
-                className="widinp" 
-                placeholder="ImageLlink"  
-              />
-            </label>
-            <label className="labinp">
-              Language:
-              <input  
-                type="text"
-                name="language"
-                onChange={handleChange}  
-                className="widinp" 
-                placeholder="Language"
-              />
-            </label>
-            <label className="labinp">
-              Link:
-              <input  
-                type="text"
-                name="link"
-                onChange={handleChange}  
-                className="widinp" 
-                placeholder="Link"
-              />
-            </label>
-            <button  type="submit">Add New Book</button>
+         
+            <div  className="secclas">
+              <label >
+                Title: 
+                <input    
+                  type="text"
+                  name="title"
+                  onChange={handleChange}
+                  className="forminpadd"
+                  placeholder="Title"
+                />
+                </label>
+            </div>
+            <div  className="secclas">
+              <label>
+                Author: 
+                <input  
+                  type="text"
+                  name="author"
+                  onChange={handleChange}   
+                  className="forminpadd"
+                  placeholder="Author"
+                />
+              </label>
+           </div>
+           <div  className="secclas">
+              <label >
+                Country:  
+                <input  
+                  type="text"
+                  name="country"
+                  onChange={handleChange}  
+                  className="forminpadd" 
+                  placeholder="Country"
+                />
+              </label>
+            </div>
+            <div  className="secclas">
+              <label >
+                Image: 
+                <input  
+                  type="text"
+                  name="imageLink"
+                  onChange={handleChange}
+                  className="forminpadd" 
+                  placeholder="ImageLlink"  
+                />
+              </label>
+            </div>
+            <div  className="secclas"> 
+              <label >
+                Language:
+                <input  
+                  type="text"
+                  name="language"
+                  onChange={handleChange}  
+                  className="forminpadd" 
+                  placeholder="Language"
+                />
+              </label>
+            </div>
+
+        
+            <button className="btn-3d"  type="submit">Add New Book</button>
+          
           </form>
       </section>
     </div>
