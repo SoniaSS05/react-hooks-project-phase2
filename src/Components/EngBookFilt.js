@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './EngBook.css';
 
 
- function EngBook({eachBook, delBook, updateBook}) {
+ function EngBookFilt({search, delBook, updateBook}) {
+     console.log('ENTRE A ESTA FUNCION')
 
-    const{id, title, author, imageLink, like} = eachBook;
+    const{id, title, author, imageLink, like} = search;
     const [ favorite, stateFavorite ] = useState(false);
 
     function handleClickDelBook(){
@@ -48,4 +49,4 @@ import './EngBook.css';
 
     )
 }
-export default EngBook;
+export default EngBookFilt;
