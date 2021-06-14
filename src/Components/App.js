@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router, Switch, Route, useHistory, Redirect} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import AddBook from './AddBook';
 import DispBook from './DispBook';
@@ -26,7 +26,9 @@ function App() {
 //Filtrado de data. Busqueda de Titulo
   const [searchFilt, setSearchFilt] = useState([]);
 
-  
+  const [datAga, setDatAga]=useState(false);
+
+
   useEffect(() => {
     console.log('At useeffect')
     fetch("http://localhost:3000/books")
@@ -34,6 +36,14 @@ function App() {
     //.then(data => console.log(data))
       .then(resData =>setData(resData))
   }, []); 
+
+  useEffect(() => {
+    console.log('At useeffect datAga')
+    fetch("http://localhost:3000/books")
+      .then(response => response.json())
+    //.then(data => console.log(data))
+      .then(resData =>setData(resData))
+  }, [datAga]); 
 
 
   function addBook(newBook){
@@ -53,12 +63,9 @@ function App() {
         setData(newBooks);
       })
    
+
       alert('Your Book was added to the Library');
     
-
-
-
-
   }
 
   function delBook(bookId){
@@ -90,9 +97,9 @@ function App() {
                 if(dat.id === upId) return updFavorite;
                 return dat;
           })
-        
           setData(updLikes);
       })
+      setDatAga(!datAga);
   }
 
   //Look for a Title
@@ -102,36 +109,31 @@ function App() {
       setSearchFilt([{}]);
     }
     setSearchFilt(search);
-   
-
-
-
 
   }
 
  // const history=useHistory();
 
   return (
-     <>
-  
-      <Router>
-     
+     <div>
+       <NavBar />
        <Switch> 
-          
           <Route path="/AddBook" > 
             <AddBook addBook={addBook}/>
           </Route>
           <Route path="/DispBook" >
-            <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt}/>
+            
+            <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt} setSearchFilt={setSearchFilt}/>
           </Route> 
           <Route exact path="/" > 
-            <Home />
+           
           </Route>
        
         </Switch> 
-      </Router>
-    </>
+
+    </div>
   );
 }
 
 export default App;
+

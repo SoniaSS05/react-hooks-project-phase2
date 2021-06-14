@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './DispBook.css';
 import EngBook from './EngBook';
-import Home from './Home';
+
 
 
 
@@ -9,9 +9,11 @@ function DispBook({data, delBook, updateBook, lookTit, searchFilt}) {
 
     if( searchFilt.length !== 0 ){
          data = searchFilt;
+         //setSearchFilt([]);
     }
    
-
+console.log("entre a Dispbook")
+console.log(searchFilt);
     const engList = data.filter(langData=>langData.language==="English");
     const olangList = data.filter(langData=>langData.language!=="English");
     const[lookword, setLookWord] = useState({description:''});
@@ -44,10 +46,9 @@ function DispBook({data, delBook, updateBook, lookTit, searchFilt}) {
         return(
         <EngBook key={elem.id} eachBook={elem} delBook={delBook}  updateBook={ updateBook} />)
     })
-
+  
     return (
         <div className="textcenter">
-            <Home />
             <div className="textcenter">
                 <div className="topmar">
                     <form onSubmit={handleSubmittit} className="dispform">

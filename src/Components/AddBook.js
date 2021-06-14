@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './AddBook.css';
-import Home from "./Home";
+
 
 
 
@@ -51,7 +51,6 @@ console.log(formData)
     
     return(
       <div className="widinput">
-         <Home />
         <h1>New Book:</h1>
         <section>
           <form onSubmit={handleSubmitNewBook}>
