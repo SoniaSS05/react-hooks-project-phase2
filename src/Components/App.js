@@ -102,18 +102,6 @@ function App() {
       setDatAga(!datAga);
   }
 
-  //Look for a Title
-  function lookTit(descTit){
-    const search = data.filter(filData=>filData.title===descTit);
-    if( search.length !== 0 ){
-      setSearchFilt([{}]);
-    }
-    setSearchFilt(search);
-
-  }
-
- // const history=useHistory();
-
   return (
      <div>
        <NavBar />
@@ -121,9 +109,8 @@ function App() {
           <Route path="/AddBook" > 
             <AddBook addBook={addBook}/>
           </Route>
-          <Route path="/DispBook" >
-            
-            <DispBook data={data} delBook={delBook} updateBook={updateBook} lookTit={lookTit} searchFilt={searchFilt} setSearchFilt={setSearchFilt}/>
+          <Route path="/DispBook" > 
+            <DispBook data={data} delBook={delBook} updateBook={updateBook} searchFilt={searchFilt} setSearchFilt={setSearchFilt} />
           </Route> 
           <Route exact path="/" > 
            

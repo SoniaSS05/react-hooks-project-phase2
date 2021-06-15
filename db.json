@@ -10,7 +10,7 @@
       "pages": 209,
       "title": "Things Fall Apart",
       "year": 1958,
-      "like": ""
+      "like": true
     },
     {
       "id": 2,
@@ -94,7 +94,7 @@
       "pages": 226,
       "title": "Pride and Prejudice",
       "year": 1813,
-      "like": ""
+      "like": true
     },
     {
       "id": 9,
@@ -154,7 +154,7 @@
       "pages": 342,
       "title": "Wuthering Heights",
       "year": 1847,
-      "like": ""
+      "like": true
     },
     {
       "id": 14,
@@ -250,7 +250,7 @@
       "pages": 194,
       "title": "Great Expectations",
       "year": 1861,
-      "like": ""
+      "like": true
     },
     {
       "id": 22,
@@ -514,7 +514,7 @@
       "pages": 128,
       "title": "The Old Man and the Sea",
       "year": 1952,
-      "like": ""
+      "like": true
     },
     {
       "id": 44,
